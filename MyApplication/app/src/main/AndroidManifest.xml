@@ -13,6 +13,27 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".TermsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TelaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConversaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContatosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ItemContato"
+            android:exported="false" />
+        <activity
             android:name=".ChatActivity"
             android:exported="false" />
         <activity

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+android:background="#E0F7FA"
+tools:context=".ConversaActivity">
+
+<TextView
+    android:id="@+id/textViewConversa"
+    android:layout_width="334dp"
+    android:layout_height="55dp"
+    android:gravity="center"
+    android:text="Conversa"
+    android:textAlignment="center"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:textColor="#00796B"
+    app:layout_constraintBottom_toTopOf="@+id/listViewChats"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.51" />
+
+<ListView
+    android:id="@+id/listViewChats"
+    android:layout_width="337dp"
+    android:layout_height="574dp"
+    android:textColor="#000000"
+    android:layout_weight="1"
+    android:dividerHeight="1dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.496">
+
+</ListView>
+
+<EditText
+    android:id="@+id/editTextMessage"
+    android:layout_width="238dp"
+    android:layout_height="50dp"
+    android:gravity="start|center_vertical"
+    android:hint="Digite sua mensagem"
+    android:textColorHint="#004D40"
+    android:textColor="#000000"
+    android:backgroundTint="#00796B"
+    android:padding="10dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/btnSend"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0" />
+
+<Button
+    android:id="@+id/btnSend"
+    android:layout_width="88dp"
+    android:layout_height="46dp"
+    android:layout_gravity="end"
+    android:text="Enviar"
+    android:backgroundTint="#00796B"
+    android:textColor="#FFFFFF"
+
+    android:padding="10dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.941"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+android:background="#E0F7FA">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:clipToPadding="false"
+    android:elevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTitleTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Termos de Serviço"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#00796B"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#004D40"
+            android:lineSpacingExtra="8dp" />
+
+        <TextView
+            android:id="@+id/textViewTitlePrivacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Política de Privacidade"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#00796B"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewPrivacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#004D40"
+            android:lineSpacingExtra="8dp" />
+    </LinearLayout>
+</ScrollView>
+
+<CheckBox
+    android:id="@+id/checkBoxAccept"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Aceito os Termos de Serviço e a Política de Privacidade"
+    android:textColor="#004D40"
+    android:padding="8dp" />
+
+<Button
+    android:id="@+id/buttonContinue"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:enabled="false"
+    android:text="Continuar"
+    android:backgroundTint="#00796B"
+    android:textColor="#FFFFFF"
+    android:padding="16dp"
+    android:elevation="2dp" />
+</LinearLayout>
